@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary bg-dark"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="duck.png" alt="Logo" width="60" height="60"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Catalogo Libri</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Anagrafica Utenti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Storico Prestiti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help</a>
+            </li>
+          </ul>
+          <form
+            class="d-flex"
+            role="search"
+            style="color: #e3f2fd"
+            data-bs-theme="light"
+          >
+            <input
+              class="form-control me-2"
+              type="Cerca"
+              placeholder="Cerca..."
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-success border border-white"
+              style="color: #e3f2fd"
+              data-bs-theme="light"
+              type="submit"
+            >
+              Cerca
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  
+      <header class="bg-light">
+        <div class="container py-5">
+          <h2 class="mb-4">Nuovo Libro</h2>
+
+          <form class="bg-white p-4 rounded shadow-sm">
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label class="form-label">Nome Autore</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Inserisci il nome dell'autore"
+                />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Cognome Autore</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Inserisci il cognome dell'autore"
+                />
+              </div>
+            </div>
+
+            <div class="mb-1">
+              <label class="form-label">Titolo</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Inserisci il titolo del libro"
+              />
+            </div>
+            <small class="text-muted">Titolo versione italiana</small>
+
+            <div class="row mt-4 mb-3">
+              <div class="col-md-4">
+                <label class="form-label">Genere</label>
+                <select class="form-select">
+                  <option selected>Scegli il genere</option>
+                  <option>Romanzo</option>
+                  <option>Saggio</option>
+                  <option>Fantasy</option>
+                  <option>Giallo</option>
+                </select>
+              </div>
+
+              <div class="col-md-4">
+                <label class="form-label">Anno di Pubblicazione</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="Inserisci l'anno"
+                />
+              </div>
+
+              <div class="col-md-4">
+                <label class="form-label">ISBN#</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Inserisci il codice ISBN#"
+                />
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="mb-3">
+              <label class="form-label">Note</label>
+              <textarea
+                class="form-control"
+                rows="3"
+                placeholder="Inserisci eventuali note sul libro"
+              ></textarea>
+            </div>
+
+            <div class="form-check mb-4">
+              <input class="form-check-input" type="checkbox" id="digitale" />
+              <label class="form-check-label" for="digitale">
+                Disponibile anche in digitale
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              Aggiungi Libro
+            </button>
+          </form>
+        </div>
+      </header>
+    </html>
+  </body>
+</html>
